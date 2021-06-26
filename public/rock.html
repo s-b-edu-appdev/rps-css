@@ -2,39 +2,49 @@
 <html>
 <head>
   <title>You played rock!</title>
-
   <!-- Expand the number of characters we can use in the document beyond basic ASCII 🎉 -->
   <meta charset="utf-8">
+  <style>
+    .button {
+      color: rgb(255, 136, 0);
+      border: 1px rgb(255, 136, 0) solid;
+      padding: 5px 15px;
+      border-radius: 5px;
+      text-decoration:none;
+      }
+    
+  </style>
+
 </head>
 
 <body>
   <div>
-    <a href="/rock">
+    <a class="button" href="/rock" >
       Play Rock
     </a>
   </div>
 
   <div>
-    <a href="/paper">
+    <a class="button" href="/paper">
       Play Paper
     </a>
   </div>
 
   <div>
-    <a href="/scissors">
+    <a class="button" href="/scissors">
       Play Scissors
     </a>
   </div>
 
-  <h2>
+  <h2 style="color:green;">
     We played rock!
   </h2>
 
-  <h2>
+  <h2 style="color:red;">
     They played paper!
   </h2>
 
-  <h2>
+  <h2 style="color:red;">
     We lost!
   </h2>
 

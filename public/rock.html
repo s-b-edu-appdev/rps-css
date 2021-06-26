@@ -5,48 +5,84 @@
   <!-- Expand the number of characters we can use in the document beyond basic ASCII 🎉 -->
   <meta charset="utf-8">
   <style>
+    * {
+      border: thin red dashed;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Helvetica, sans-serif;
+    }
     .button {
       color: rgb(255, 136, 0);
       border: 1px rgb(255, 136, 0) solid;
-      padding: 5px 15px;
       border-radius: 5px;
-      text-decoration:none;
-      }
-    
+      text-decoration: none;
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+    .one-third {
+      width: 32%;
+    }
+    .player-card {
+      border: thin green solid;
+      width: 49%;
+      text-align: center;
+    }
+    .computer-card {
+      border: thin red solid;
+      width: 49%;
+      text-align: center;
+    }
+    .row {
+      display: flex;
+      justify-content: space-between; 
+    }
   </style>
 
 </head>
 
 <body>
-  <div>
-    <a class="button" href="/rock" >
-      Play Rock
-    </a>
+  <div class="row">
+    <div class="one-third">
+      <a class="button" href="/rock" >
+        Play Rock
+      </a>
+    </div>
+
+    <div class="one-third">
+      <a class="button" href="/paper">
+        Play Paper
+      </a>
+    </div>
+
+    <div class="one-third">
+      <a class="button" href="/scissors">
+        Play Scissors
+      </a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="player-card">
+      <h2 style="color:green;">
+        We played rock!
+      </h2>
+    </div>
+
+    <div class="computer-card">
+      <h2 style="color:red;">
+        They played paper!
+      </h2>
+    </div>
   </div>
 
-  <div>
-    <a class="button" href="/paper">
-      Play Paper
-    </a>
+  <div class="card">
+    <h2 style="color:red;">
+      We lost!
+    </h2>
   </div>
-
-  <div>
-    <a class="button" href="/scissors">
-      Play Scissors
-    </a>
-  </div>
-
-  <h2 style="color:green;">
-    We played rock!
-  </h2>
-
-  <h2 style="color:red;">
-    They played paper!
-  </h2>
-
-  <h2 style="color:red;">
-    We lost!
-  </h2>
 
   <a href="/">
     Rules

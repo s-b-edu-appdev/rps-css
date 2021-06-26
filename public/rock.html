@@ -2,90 +2,62 @@
 <html>
 <head>
   <title>You played rock!</title>
-  <!-- Expand the number of characters we can use in the document beyond basic ASCII 🎉 -->
   <meta charset="utf-8">
-  <style>
-    * {
-      border: thin red dashed;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: Helvetica, sans-serif;
-    }
-    .button {
-      color: rgb(255, 136, 0);
-      border: 1px rgb(255, 136, 0) solid;
-      border-radius: 5px;
-      text-decoration: none;
-      display: inline-block;
-      width: 100%;
-      text-align: center;
-      padding-top: 5px;
-      padding-bottom: 5px;
-    }
-    .one-third {
-      width: 32%;
-    }
-    .player-card {
-      border: thin green solid;
-      width: 49%;
-      text-align: center;
-    }
-    .computer-card {
-      border: thin red solid;
-      width: 49%;
-      text-align: center;
-    }
-    .row {
-      display: flex;
-      justify-content: space-between; 
-    }
-  </style>
-
+  <link rel="stylesheet" href="my_styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <div class="row">
-    <div class="one-third">
-      <a class="button" href="/rock" >
-        Play Rock
-      </a>
+  <div class="container">
+    <div class="row mb">
+      <div class="one-third">
+        <a class="button" href="/rock" >
+          Play Rock
+        </a>
+      </div>
+
+      <div class="one-third">
+        <a class="button" href="/paper">
+          Play Paper
+        </a>
+      </div>
+
+      <div class="one-third">
+        <a class="button" href="/scissors">
+          Play Scissors
+        </a>
+      </div>
     </div>
 
-    <div class="one-third">
-      <a class="button" href="/paper">
-        Play Paper
-      </a>
+    <div class="row mb">
+      <div class="player-card">
+        <h2 style="color:red;" class="centered">
+          We played rock!
+        </h2>
+      </div>
+
+      <div class="player-card">
+        <h2 style="color:red;" class="centered">
+          They played paper!
+        </h2>
+      </div>
     </div>
 
-    <div class="one-third">
-      <a class="button" href="/scissors">
-        Play Scissors
+    <div class="row-center mb">
+      <div class="outcome-card">
+        <h2 style="color:red;" class="centered">
+          We lost!
+        </h2>
+      </div>
+    </div>
+    
+    <div class="row-center">
+      <a href="/">
+        Rules
       </a>
     </div>
   </div>
-  <div class="row">
-    <div class="player-card">
-      <h2 style="color:green;">
-        We played rock!
-      </h2>
-    </div>
-
-    <div class="computer-card">
-      <h2 style="color:red;">
-        They played paper!
-      </h2>
-    </div>
-  </div>
-
-  <div class="card">
-    <h2 style="color:red;">
-      We lost!
-    </h2>
-  </div>
-
-  <a href="/">
-    Rules
-  </a>
 </body>
 </html>
